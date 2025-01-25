@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Professora de Canto</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    @font-face {
+      font-family: 'Gotham';
+      src: url('caminho/para/Gotham-Black.woff2') format('woff2'),
+           url('caminho/para/Gotham-Black.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .hero-section {
+      background-image: url('img/foto_capa.png');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding-top: 50px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      font-family: 'Gotham', sans-serif;
+      font-weight: normal;
+    }
+
+    .hero-section h1 {
+      color: #ffffff;
+      font-size: 4rem;
+      font-weight: bold;
+    }
+
+    .bio-section img {
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .footer {
+      background-color: #1a202c;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="text-white text-2xl">
+        <img src="img/Logo-Horizontal-Branco-Rosa.png" alt="Logo Fernanda Pontes" style="height: 50px;">
+      </a>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="text-white">Home</a></li>
+        <li><a href="#bio" class="text-white">Sobre Mim</a></li>
+        <li><a href="#classes" class="text-white">Aulas de Canto</a></li>
+        <li><a href="#galeria" class="text-white">Galeria</a></li>
+        <li><a href="#videos" class="text-white">Vídeos</a></li>
+        <li><a href="#contato" class="text-white">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section text-center text-white">
+  </section>
+
+
+<!-- Bio Section -->
+<section id="bio" class="bio-section bg-gray-100 py-10">
+    <div class="container mx-auto flex items-center justify-center">
+        <img src="img/foto_perfil.jpg" alt="Foto da Professora" class="w-40 h-45 rounded-full border-4 border-pink-500 neon-border">
+        <div>
+            <h2 class="text-3xl font-bold mb-4">Sobre Mim</h2>
+            <p class="text-gray-700 text-lg">
+                Olá! Meu nome é <strong>Fernanda Pontes</strong>, e sou professora de canto há mais de 10 anos. Minha paixão é ajudar as pessoas a descobrirem o verdadeiro potencial de suas vozes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<style>
+    .neon-border {
+        border-radius: 50%; /* Para borda redonda */
+        position: relative; /* Necessário para o efeito de sombra */
+        overflow: hidden; /* Garante que a sombra não ultrapasse a borda */
+        animation: glow 1.5s infinite alternate; /* Animação de brilho */
+    }
+
+    .neon-border::before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -4px;
+        right: -4px;
+        bottom: -4px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+        box-shadow: 0 0 20px rgba(255, 20, 147, 0.7), 
+                    0 0 40px rgba(255, 20, 147, 0.5), 
+                    0 0 60px rgba(255, 20, 147, 0.3); /* Efeito neon rosa */
+        z-index: -1; /* Coloca atrás da imagem */
+    }
+
+    @keyframes glow {
+        0% {
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.7), 
+                        0 0 40px rgba(255, 20, 147, 0.5);
+        }
+        100% {
+            box-shadow: 0 0 30px rgba(255, 20, 147, 1), 
+                        0 0 60px rgba(255, 20, 147, 0.7),
+                        0 0 90px rgba(255, 20, 147, 0.5);
+        }
+    }
+</style>
+
+
+
+
+  <!-- Classes Section -->
+  <section id="classes" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Aulas de Canto</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold">Aulas Individuais</h3>
+          <p class="text-gray-600 mt-4">Aulas personalizadas focadas em desenvolver suas habilidades vocais e técnicas de respiração.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold">Aulas em Grupo</h3>
+          <p class="text-gray-600 mt-4">Aprenda em conjunto com outros alunos, trocando experiências e evoluindo em conjunto.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-semibold">Aulas Online</h3>
+          <p class="text-gray-600 mt-4">Seja de qualquer lugar, conecte-se e tenha aulas online de canto com qualidade profissional.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Gallery Section -->
+<section id="galeria" class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-10">Galeria</h2>
+        <div class="swiper-container relative">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/400" alt="Imagem 1" class="rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/400" alt="Imagem 2" class="rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/400" alt="Imagem 3" class="rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/400" alt="Imagem 4" class="rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/400" alt="Imagem 5" class="rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/400" alt="Imagem 6" class="rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/400" alt="Imagem 7" class="rounded-lg shadow-lg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://via.placeholder.com/400" alt="Imagem 8" class="rounded-lg shadow-lg">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next absolute top-1/2 right-4 transform -translate-y-1/2 text-black bg-white p-2 rounded-full shadow-md hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6l6 6-6 6" />
+                </svg>
+            </div>
+            <div class="swiper-button-prev absolute top-1/2 left-4 transform -translate-y-1/2 text-black bg-white p-2 rounded-full shadow-md hover:bg-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 6l-6 6 6 6" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Include Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        loop: true,
+    });
+</script>
+
+<!-- Include Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<style>
+    .swiper-slide {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
+
+<!-- Videos Section -->
+<section id="videos" class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-10">Vídeos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="relative w-full" style="padding-top: 56.25%;">
+                <iframe src="https://www.youtube.com/embed/Xn1G-nc7fG4" title="YouTube video" class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+            </div>
+            <div class="relative w-full" style="padding-top: 56.25%;">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="YouTube video" class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+.aspect-w-16 {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.aspect-h-9 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+
+
+
+  
+
+  <!-- Contact Section -->
+  <section id="contato" class="py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-10">Entre em Contato</h2>
+      <div class="flex justify-center space-x-6">
+        <a href="https://wa.me/SEU_NUMERO" target="_blank" class="text-green-500 hover:text-green-700">
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        <a href="https://instagram.com/SEU_USUARIO" target="_blank" class="text-pink-600 hover:text-pink-800">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://youtube.com/c/SEU_CANAL" target="_blank" class="text-red-600 hover:text-red-800">
+          <i class="fab fa-youtube fa-2x"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer py-6 text-center">
+    <p>© 2025 Fernanda Pontes - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
