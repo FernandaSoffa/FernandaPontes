@@ -59,24 +59,24 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="bg-gray-800 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="#" class="text-white text-2xl">
-        <img src="img/Logo-Horizontal-Branco-Rosa.png" alt="Logo Fernanda Pontes" style="height: 50px;">
-      </a>
-      <ul class="flex space-x-6">
-        <li><a href="#" class="text-white">Home</a></li>
-        <li><a href="#oficina" class="text-white">Oficina Musicalização Infantil</a></li>
-        <li><a href="#bio" class="text-white">Sobre Mim</a></li>
-        <li><a href="#classes" class="text-white">Aulas de Canto</a></li>
-        <li><a href="#book" class="text-white">Livro Teoria Musical</a></li>
-        <!--<li><a href="#galeria" class="text-white">Galeria</a></li>-->
-        <!--<li><a href="#videos" class="text-white">Vídeos</a></li>-->
-        <li><a href="#contato" class="text-white">Contato</a></li>
-      </ul>
-    </div>
-  </nav>
+<!-- Navbar -->
+<nav class="bg-gray-800 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="#" class="text-white text-2xl">
+      <img src="img/Logo-Horizontal-Branco-Rosa.png" alt="Logo Fernanda Pontes" style="height: 50px;">
+    </a>
+    <ul class="flex space-x-6 md:flex-row flex-col md:space-x-6 space-y-4 md:space-y-0">
+      <li><a href="#" class="text-white">Home</a></li>
+      <li><a href="#oficina" class="text-white">Oficina Musicalização Infantil</a></li>
+      <li><a href="#bio" class="text-white">Sobre Mim</a></li>
+      <li><a href="#classes" class="text-white">Aulas de Canto</a></li>
+      <li><a href="#book" class="text-white">Livro Teoria Musical</a></li>
+      <!--<li><a href="#galeria" class="text-white">Galeria</a></li>-->
+      <!--<li><a href="#videos" class="text-white">Vídeos</a></li>-->
+      <li><a href="#contato" class="text-white">Contato</a></li>
+    </ul>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <section class="hero-section text-center text-white">
@@ -192,6 +192,7 @@
 
 
  <!-- Classes Section -->
+<!-- Classes Section -->
 <section id="classes" class="py-16">
   <div class="container mx-auto text-center">
     <h2 class="text-4xl font-bold mb-10">Aulas de Canto</h2>
@@ -212,7 +213,7 @@
     <br>
     <div class="container mx-auto text-center">
       <div class="flex justify-center">
-        <div class="relative w-1/2" style="padding-top: 28.125%;">
+        <div class="relative w-full sm:w-3/4 md:w-1/2" style="padding-top: 56.25%;"> <!-- Ajuste de largura para telas pequenas -->
           <iframe src="https://www.youtube.com/embed/Pv8I2YGQwfY?si=nU6AL8rxpftG1Vby" 
                   title="YouTube video" 
                   class="absolute top-0 left-0 w-full h-full" 
