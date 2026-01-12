@@ -63,6 +63,54 @@
       background-color: #1a202c;
       color: #fff;
     }
+    /* ==============================
+     SWIPER - CARROSSEL DE VÍDEOS
+     ============================== */
+
+      .mySwiper {
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Arredondamento e sombra dos vídeos */
+      .swiper-slide iframe {
+        border-radius: 16px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Setas de navegação */
+      .swiper-button-next,
+      .swiper-button-prev {
+        color: #1a202c; /* mesmo tom do footer */
+      }
+
+      .swiper-button-next:hover,
+      .swiper-button-prev:hover {
+        transform: scale(1.1);
+      }
+
+      /* Paginação (bolinhas) */
+      .swiper-pagination-bullet {
+        background-color: #cbd5e0;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #1a202c;
+      }
+
+      /* Melhor espaçamento em telas grandes */
+      @media (min-width: 1024px) {
+        .mySwiper {
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
   </style>
 </head>
 <body>
@@ -171,36 +219,107 @@
 </style>
 
 <!-- Oficina Section -->
+<!-- Oficina Section -->
 <section id="oficina" class="py-16">
   <div class="container mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-10">Oficina Musicalização Infantil</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="relative w-full" style="padding-top: 56.25%;">
-            <iframe src="https://www.youtube.com/embed/WLiqfKh4Xj4" title="YouTube video" class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+    <h2 class="text-4xl font-bold mb-10">
+      Oficina Musicalização Infantil
+    </h2>
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper relative">
+
+      <!-- Wrapper -->
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide flex justify-center">
+          <div class="relative w-full max-w-xl aspect-video rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/WLiqfKh4Xj4"
+              class="absolute inset-0 w-full h-full"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
-        <div class="relative w-full" style="padding-top: 56.25%;">
-            <iframe src="https://www.youtube.com/embed/3V7GKwdfcOI" title="YouTube video" class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+
+        <div class="swiper-slide flex justify-center">
+          <div class="relative w-full max-w-xl aspect-video rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/3V7GKwdfcOI"
+              class="absolute inset-0 w-full h-full"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
-        <div class="relative w-full" style="padding-top: 56.25%;">
-            <iframe src="https://www.youtube.com/embed/NZzICXY3DiY" title="YouTube video" class="absolute top-0 left-0 w-full h-full" allowfullscreen></iframe>
+
+        <div class="swiper-slide flex justify-center">
+          <div class="relative w-full max-w-xl aspect-video rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/NZzICXY3DiY"
+              class="absolute inset-0 w-full h-full"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
+
+        <div class="swiper-slide flex justify-center">
+          <div class="relative w-full max-w-xl aspect-video rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/WLiqfKh4Xj4"
+              class="absolute inset-0 w-full h-full"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <div class="relative w-full max-w-xl aspect-video rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/WLiqfKh4Xj4"
+              class="absolute inset-0 w-full h-full"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex justify-center">
+          <div class="relative w-full max-w-xl aspect-video rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.youtube.com/embed/WLiqfKh4Xj4"
+              class="absolute inset-0 w-full h-full"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Setas -->
+      <div class="swiper-button-prev hidden md:flex"></div>
+      <div class="swiper-button-next hidden md:flex"></div>
+
+      <!-- Paginação -->
+      <div class="swiper-pagination mt-6"></div>
     </div>
-      <div class="mt-12">
-        <h3 class="text-3xl font-semibold mb-6 text-gray-700">Para educadores e amantes da música</h3>
-        <p class="text-lg text-gray-600 leading-relaxed">
-            Explore atividades criativas e interativas como:
-        </p>
-        <ul class="mt-4 text-left inline-block text-gray-600 text-2xl space-y-2">
-          <li>🎵 Ritmos com colheres e percussão corporal.</li>
-          <li>🎶 Ampliação do repertório com músicas eruditas e folclóricas de outros países.</li>
-          <li>🤹 Jogos de imitação, corpo e movimento.</li>
-      </ul>        
+
+    <!-- TEXTO (AGORA NO LUGAR CERTO) -->
+    <div class="mt-12">
+      <h5 class="text-3xl font-semibold mb-6 text-gray-700">
+        Para educadores e amantes da música
+      </h5>
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Explore atividades criativas e interativas como:
+      </p>
+      <ul class="mt-4 inline-block text-left text-gray-600 text-2xl space-y-2">
+        <li>🎵 Ritmos com colheres e percussão corporal.</li>
+        <li>🎶 Ampliação do repertório com músicas eruditas.</li>
+        <li>🤹 Jogos de imitação, corpo e movimento.</li>
+      </ul>
     </div>
+
   </div>
 </section>
 
-
- <!-- Classes Section -->
 <!-- Classes Section -->
 <section id="classes" class="py-16">
   <div class="container mx-auto text-center">
@@ -317,6 +436,32 @@
         loop: true,
     });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 24,
+
+      slidesPerView: 1,
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+
 
 <!-- Include Swiper CSS -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
